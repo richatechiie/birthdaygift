@@ -1,0 +1,13 @@
+{
+  "name": "happy-birthday-bhna",
+  "version": "1.0.0",
+  "description": "An animated, interactive birthday card website.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

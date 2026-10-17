@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Happy Birthday Bhna 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Baloo+2:wght@500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ambient sparkle layer, present on every page -->
+<div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+
+<div class="stage" id="stage">
+
+  <!-- ============ PAGE 1 : LANDING ============ -->
+  <section class="page" id="page-1" data-page="1">
+    <div class="p1-bg"></div>
+    <div class="p1-inner">
+      <div class="p1-title-wrap">
+        <svg class="p1-title-svg" viewBox="0 0 640 230" preserveAspectRatio="xMidYMid meet" aria-label="happy birthday bhna">
+          <defs>
+            <path id="titleArc" d="M 20 208 Q 320 8 620 208" fill="none"/>
+            <linearGradient id="titleFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ef9297"/>
+              <stop offset="50%" stop-color="#d9767e"/>
+              <stop offset="100%" stop-color="#c05963"/>
+            </linearGradient>
+          </defs>
+          <text class="arc-word aw1" style="--i:0"><textPath href="#titleArc" startOffset="3%">happy</textPath></text>
+          <text class="arc-word aw2" style="--i:1"><textPath href="#titleArc" startOffset="32%">birthday</textPath></text>
+          <text class="arc-word aw3" style="--i:2"><textPath href="#titleArc" startOffset="76%">bhna</textPath></text>
+        </svg>
+      </div>
+
+      <div class="giftbox-wrap">
+        <img src="assets/giftbox_hero.png" alt="a wrapped pink gift box" class="giftbox-img" id="heroGift">
+        <span class="spark s1">✦</span>
+        <span class="spark s2">✧</span>
+        <span class="spark s3">✦</span>
+        <span class="spark s4">✧</span>
+      </div>
+
+      <div class="p1-question">
+        <p class="ask">Are you excited??</p>
+        <div class="btn-row">
+          <button class="btn btn-yes" id="btnYes">YES <span class="emoji">🥳</span>!!</button>
+          <button class="btn btn-no" id="btnNo">No <span class="emoji">🥲</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 : HOW DARE U ============ -->
+  <section class="page" id="page-2" data-page="2">
+    <div class="p2-inner">
+      <h2 class="p2-title">How dare u <span class="emoji shake-emoji">🤨</span>?!!</h2>
+      <div class="penguin-wrap" id="penguinWrap">
+        <img src="assets/penguin.png" alt="offended penguin holding a bag" class="penguin-img">
+        <span class="puff puff-l">💭</span>
+      </div>
+      <button class="btn btn-dark" id="btnGoBack1">GO BACK!!</button>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 3 : GIFT SELECTION ============ -->
+  <section class="page" id="page-3" data-page="3">
+    <div class="p3-inner">
+      <h2 class="p3-title">Gifts for you my sweetest sister</h2>
+      <div class="gift-row">
+        <button class="gift-slot" data-gift="1" id="gift1">
+          <span class="gift-num">1</span>
+          <img src="assets/flowerbox.png" alt="wrapped gift box with roses">
+          <span class="gift-check">✓</span>
+        </button>
+        <button class="gift-slot" data-gift="2" id="gift2">
+          <span class="gift-num">2</span>
+          <img src="assets/flowerbox.png" alt="wrapped gift box with roses">
+          <span class="gift-check">✓</span>
+        </button>
+        <button class="gift-slot" data-gift="3" id="gift3">
+          <span class="gift-num">3</span>
+          <img src="assets/flowerbox.png" alt="wrapped gift box with roses">
+          <span class="gift-check">✓</span>
+        </button>
+      </div>
+      <button class="btn btn-sequence" id="btnSequence" disabled>open in sequence</button>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 4 : GIFT 1 ============ -->
+  <section class="page" id="page-4" data-page="4">
+    <div class="p4-blob-tl"></div>
+    <div class="p4-blob-br"></div>
+    <div class="p4-stars" aria-hidden="true">
+      <span class="star st1">✦</span><span class="star st2">✧</span><span class="star st3">✦</span>
+      <span class="star st4">✧</span><span class="star st5">✦</span><span class="star st6">✧</span>
+      <span class="star st7">✦</span>
+    </div>
+    <button class="btn btn-back" id="btnBack4">back</button>
+    <div class="p4-decor" aria-hidden="true">
+      <span class="deco-butterfly db1">🦋</span>
+      <span class="deco-butterfly db2">🦋</span>
+      <span class="deco-heart dh1">💗</span>
+      <span class="deco-heart dh2">🧡</span>
+      <span class="deco-heart dh3">💛</span>
+    </div>
+    <div class="p4-inner">
+      <div class="polaroid-stack">
+        <div class="polaroid behind"></div>
+        <div class="polaroid front" id="polaroid1">
+          <img src="assets/photo1.png" alt="birthday girl smiling by a mountain river">
+          <span class="pin">📎</span>
+        </div>
+      </div>
+      <div class="p4-text">
+        <p class="p4-eyebrow twinkle-text">HAPPY</p>
+        <h2 class="p4-heading twinkle-text">BIRTHDAY</h2>
+        <p class="p4-msg twinkle-text">Happy birthday bhna!! wishing you a day full of love, happiness, laughter and joy and forever.</p>
+      </div>
+    </div>
+    <p class="p4-footnote twinkle-text">✦ made with love, just for you ✦</p>
+  </section>
+
+  <!-- ============ PAGE 5 : GIFT 2 ============ -->
+  <section class="page" id="page-5" data-page="5">
+    <button class="btn btn-back btn-back-light" id="btnBack5">back</button>
+    <div class="p5-inner">
+      <h2 class="p5-title">For you my beautiful sister</h2>
+      <div class="p5-row">
+        <div class="p5-card p5-card-left" id="card1">
+          <img src="assets/bouquet.png" alt="sunflower and rose bouquet">
+        </div>
+        <div class="p5-card p5-card-right" id="card2">
+          <img src="assets/giftbox2.png" alt="birthday gift box with perfume and jewelry">
+        </div>
+      </div>
+    </div>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ PAGE 6 : GIFT 3 ============ -->
+  <section class="page" id="page-6" data-page="6">
+    <button class="btn btn-back" id="btnBack6">back</button>
+    <div class="p6-frame">
+      <img class="p6-full-img" src="assets/page6_full.png" alt="scrapbook page full of birthday stickers, photos and sweet messages">
+      <div class="p6-shine" aria-hidden="true"></div>
+    </div>
+    <div class="p6-sparkles" aria-hidden="true">
+      <span class="p6-spark sp1">✦</span><span class="p6-spark sp2">✧</span><span class="p6-spark sp3">✦</span>
+      <span class="p6-spark sp4">✧</span><span class="p6-spark sp5">✦</span><span class="p6-spark sp6">✧</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 7 : FINAL ============ -->
+  <section class="page" id="page-7" data-page="7">
+    <div class="p7-bg"></div>
+    <div class="p7-blob"></div>
+    <button class="btn btn-home" id="btnHome">home</button>
+    <div class="p7-inner">
+      <p class="p7-text">
+        <span class="line l1">may all the good</span>
+        <span class="line l2">things you've been</span>
+        <span class="line l3">waiting for finally</span>
+        <span class="line l4">find you this year <span class="envelope">💌</span></span>
+      </p>
+      <img src="assets/girl_final.png" alt="cute girl making a heart with her hands" class="p7-girl" id="girlFinal">
+      <span class="fheart fh1">💗</span>
+      <span class="fheart fh2">💗</span>
+      <span class="fheart fh3">✨</span>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
